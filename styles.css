@@ -1,0 +1,495 @@
+/* =============================
+   Cricket Universe - Styles.css
+   Author: Usman x ChatGPT
+   Version: 1.2 (Dark Mode + Mail Button)
+   ============================= */
+
+/* FONT RESET + BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* ==============================
+   THEME VARIABLES
+============================== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --nav-bg: #e9fbe9;
+  --card-bg: #f5f5f5;
+  --footer-bg: #e9fbe9;
+  --green: #1b5e20;
+  --border-color: #dcdcdc;
+  --green-dark: #145a17;
+}
+
+/* Dark Mode Variables */
+body.dark {
+  --bg-color: #0f0f0f;
+  --text-color: #f1f1f1;
+  --nav-bg: #1b1b1b;
+  --card-bg: #181818;
+  --footer-bg: #121212;
+  --green: #69d169;
+  --green-dark: #82e082;
+  --border-color: #333;
+}
+
+/* =============================
+   NAVIGATION BAR
+   ============================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3%;
+  background-color: var(--nav-bg);
+  border-bottom: 2px solid var(--green);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.4s ease;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.brand img.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.brand-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: var(--green);
+}
+
+/* TOGGLE BUTTON */
+.toggle {
+  background: none;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  padding: 0.4rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--green);
+}
+
+.toggle:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+
+/* MOBILE NAV TOGGLE */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hamburger-box,
+.hamburger-inner {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* =============================
+   HERO SECTION
+   ============================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 6%;
+  background: var(--card-bg);
+  border-bottom: 2px solid var(--border-color);
+  transition: background 0.4s ease;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+  padding-right: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.hero-text .lead {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+}
+
+.cta {
+  background: var(--green);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.3rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: var(--green-dark);
+}
+
+.cta.ghost {
+  background: none;
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.cta.ghost:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+/* HERO IMAGE */
+.hero-media img {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* EMAIL FORM */
+.notify {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.notify input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid var(--green);
+  border-radius: 25px;
+  outline: none;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.notify button {
+  background: var(--green);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.notify button:hover {
+  background: var(--green-dark);
+}
+
+/* =============================
+   ABOUT SECTION
+   ============================= */
+.about {
+  padding: 4rem 6%;
+  background-color: var(--bg-color);
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.features article {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  transition: 0.3s;
+}
+
+.features article:hover {
+  border-color: var(--green);
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+}
+
+/* =============================
+   GALLERY SECTION
+   ============================= */
+.gallery {
+  padding: 4rem 6%;
+  background-color: var(--card-bg);
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* =============================
+   CONTACT SECTION
+   ============================= */
+.contact {
+  padding: 4rem 6%;
+  text-align: center;
+  background: var(--bg-color);
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+/* ✅ EMAIL BUTTON STYLE ✅ */
+.contact .email-btn {
+  display: inline-block;
+  background: var(--green);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact .email-btn:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+}
+
+/* SOCIAL LINKS */
+.social-quicklinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-quicklinks a {
+  color: var(--green);
+  text-decoration: none;
+  border: 2px solid var(--green);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.social-quicklinks a:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+
+/* =============================
+   FOOTER
+   ============================= */
+.site-footer {
+  background-color: var(--footer-bg);
+  border-top: 2px solid var(--green);
+  padding: 2rem 6%;
+  margin-top: 3rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-brand img {
+  border-radius: 50%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-links a svg {
+  fill: var(--green);
+  transition: 0.3s;
+}
+
+.footer-links a:hover svg {
+  fill: var(--green-dark);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* =============================
+   RESPONSIVE DESIGN
+   ============================= */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+
+  .notify {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 3%;
+    background: var(--card-bg);
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text .lead {
+    font-size: 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =============================
+   ANIMATIONS
+   ============================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Universe | Latest Cricket News & Updates</title>
+  <meta name="description" content="Cricket Universe - Stay updated with the latest cricket news, scores, videos, and live match updates. Join our cricket community today!" />
+  <meta name="keywords" content="cricket, live scores, cricket news, cricket videos, T20, ODI, IPL, cricket community" />
+  <meta name="author" content="Cricket Universe" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Cricket Universe | Latest Cricket News & Updates" />
+  <meta property="og:description" content="Stay updated with cricket scores, news, and videos. Join the cricket community today!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cricketuniverse.netlify.app" />
+  <meta property="og:image" content="https://cricketuniverse.netlify.app/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cricket Universe | Latest Cricket News & Updates" />
+  <meta name="twitter:description" content="Stay updated with cricket scores, news, and videos. Join the cricket community today!" />
+  <meta name="twitter:image" content="https://cricketuniverse.netlify.app/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="light">
+  <!-- =========================
+       Header / Navigation
+       ========================= -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="brand" id="brand">
+        <!-- KEEP FILE NAME: logo.jpg (replace with circular logo) -->
+        <img src="logo.jpg" alt="Cricket Universe logo" class="logo" id="site-logo" width="64" height="64">
+        <span class="brand-title">Cricket Universe</span>
+      </div>
+
+      <button id="nav-toggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>
+
+      <ul class="nav-links" id="nav" role="menubar">
+        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#gallery">Gallery</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark/Light toggle (right side) -->
+        <button id="mode-toggle" class="toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================
+       Main Content
+       ========================= -->
+  <main id="home" class="container" role="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <h1 id="hero-heading">Welcome to Cricket Universe</h1>
+        <p class="lead">
+          We have to launch — our website is coming very soon!<br>
+          Stay tuned for match analysis, exclusive videos, and cricket news.
+        </p>
+        <div class="hero-ctas">
+          <a class="cta" href="#about" role="button">Learn More</a>
+          <a class="cta ghost" href="https://www.youtube.com/@play.cricketuniverse" target="_blank" rel="noopener noreferrer">Visit Channel</a>
+        </div>
+
+        <!-- Quick launch / email capture (optional) -->
+        <form id="notify-form" class="notify" action="#" onsubmit="return false;">
+          <label for="email-input" class="sr-only">Email for updates</label>
+          <input id="email-input" name="email" type="email" placeholder="Enter your email for launch updates" aria-label="Email for updates">
+          <button type="submit">Notify Me</button>
+        </form>
+      </div>
+
+      <div class="hero-media" aria-hidden="false">
+        <!-- Replace with a high-quality cricket image -->
+        <img src="images/hero-cricket.png" alt="Cricket action image — batsman hitting a shot" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="inner">
+        <h2 id="about-heading">Who We Are</h2>
+        <p>
+          Cricket Universe is a professional cricket team that conducts rigorous trials to identify and nurture talented players. 
+          Exceptional performers are then selected to join the team, 
+          providing them with a platform to showcase their skills and excel in competitive cricket.
+        </p>
+
+        <div class="features" role="list">
+          <article role="listitem">
+            <h3>Talent Identification</h3>
+            <p>We organize thorough trials to spot emerging cricket talent and assess their potential.</p>
+          </article>
+          <article role="listitem">
+            <h3>Player Development</h3>
+            <p>Selected players receive expert coaching and guidance to enhance their skills.</p>
+          </article>
+          <article role="listitem">
+            <h3>Team Integration</h3>
+            <p>Outstanding performers are welcomed into the team, gaining opportunities to compete at higher levels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery" aria-labelledby="gallery-heading">
+      <div class="inner">
+        <h2 id="gallery-heading">Gallery</h2>
+        <p>Click any image to open the full-size photo. Replace these placeholders with your images.</p>
+         <br>
+        <div class="grid" role="list">
+          <figure role="listitem">
+            <img src="images/cricket1.png" alt="Cricket stadium crowd" loading="lazy">
+            <figcaption>Stadium atmosphere</figcaption>
+          </figure>
+          <figure role="listitem">
+            <img src="images/cricket2.png" alt="Bowler delivering a ball" loading="lazy">
+            <figcaption>Fast bowling</figcaption>
+          </figure>
+          <figure role="listitem">
+            <img src="images/cricket3.png" alt="Batsman celebrating a six" loading="lazy">
+            <figcaption>Big hit</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <div class="inner">
+        <h2 id="contact-heading">Contact</h2>
+        <p>For business inquiries or collaborations, email us directly:</p>
+        <p>
+          <section class="contact">
+  <a href="mailto:help.cricketuniverse@gmail.com" class="email-btn">📧 Email Us</a>
+</section>
+        </p>
+
+        <div class="social-quicklinks">
+          <a href="https://www.instagram.com/play.cricketuniverse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61582929687534" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+          <a href="https://x.com/cr_universe" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">X</a>
+          <a href="https://discord.gg/xrZEFht5Zg" target="_blank" rel="noopener noreferrer" aria-label="Discord">Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+       ========================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Cricket Universe logo" class="logo-sm" width="56" height="56">
+        <section class="contact">
+  <h2>Cricket Universe</h2>
+  <p>For any queries, feel free to email us:</p>
+  <a href="mailto:help.cricketuniverse@gmail.com" class="email-btn">📧 Email Us</a>
+</section>
+      </div>
+
+      <nav class="footer-links" aria-label="Social links">
+        <!-- Inline SVG icons for crispness -->
+        <a href="https://www.instagram.com/play.cricketuniverse/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <!-- Instagram icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A3.2 3.2 0 1 0 15.2 11 3.2 3.2 0 0 0 12 8.2zM18.4 6.3a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"/></svg>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61582929687534" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <!-- Facebook icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.2V12h2.2V9.8c0-2.2 1.3-3.5 3.3-3.5.95 0 1.95.17 1.95.17v2.1h-1.08c-1.07 0-1.4.66-1.4 1.34V12h2.38l-.38 2.9h-2v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+
+        <a href="https://x.com/cr_universe" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <!-- X icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M22 4.01c-.7.31-1.45.52-2.24.62.8-.48 1.42-1.24 1.71-2.14-.75.44-1.58.75-2.46.92A3.74 3.74 0 0 0 12.1 6.3c0 .31.03.62.1.92-3.1-.16-5.85-1.64-7.68-3.9-.32.54-.5 1.17-.5 1.84 0 1.27.65 2.4 1.64 3.06-.6-.02-1.16-.18-1.65-.45v.05c0 1.78 1.26 3.27 2.93 3.62-.51.14-1.04.18-1.6.07.45 1.42 1.75 2.46 3.29 2.49A7.52 7.52 0 0 1 2 19.54a10.63 10.63 0 0 0 5.76 1.69c6.9 0 10.68-5.73 10.68-10.7v-.49c.73-.53 1.36-1.2 1.86-1.96-.67.3-1.4.51-2.16.6z"/></svg>
+        </a>
+
+        <a href="https://discord.gg/xrZEFht5Zg" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+          <!-- Discord icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 3H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1l3-3 3 2 3-2 3 2 3-2 1-1V4a1 1 0 0 0-1-1z"/></svg>
+        </a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom" role="note">
+      <small>© <span id="year"></span> Cricket Universe. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- =========================
+       Scripts (external file)
+       ========================= -->
+  <script src="scripts.js"></script>
+
+  <!-- Inline small script for progressive enhancement if scripts.js not loaded -->
+  <noscript>
+    <style>
+      .hero-media img { opacity: 1; }
+    </style>
+  </noscript>
+</body>
+</html>
